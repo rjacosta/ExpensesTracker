@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ExpensesTracker</string>
+    <string name="net_expenses">Net Expenses</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="expense_button_text">Go To Expenses</string>
+    <string name="enter_button_text">Enter</string>
+</resources>
