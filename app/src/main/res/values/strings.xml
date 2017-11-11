@@ -1,7 +1,14 @@
 <resources>
     <string name="app_name">ExpensesTracker</string>
-    <string name="net_expenses">Net Expenses</string>
+    <string name="net_expenses">Net Expenses:</string>
     <string name="enter_amount">Enter Amount</string>
     <string name="expense_button_text">Go To Expenses</string>
     <string name="enter_button_text">Enter</string>
+    <string name="dad">Dad</string>
+    <string name="dad_text">Dad: </string>
+    <string name="previous_month_text">Previous Month: </string>
+    <string name="food_text">Food: </string>
+    <string name="misc_text">Misc: </string>
+    <string name="transportation_text">Transportation:</string>
+    <string name="work_text">Work: </string>
 </resources>

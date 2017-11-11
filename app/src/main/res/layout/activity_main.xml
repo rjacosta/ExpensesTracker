@@ -10,13 +10,12 @@
         android:id="@+id/enter_amount_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/enter_button"
         android:layout_alignBottom="@+id/enter_button"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/enter_button"
         android:ems="10"
+        android:hint="@string/enter_amount"
         android:inputType="number|numberDecimal"
-        android:text="@string/enter_amount"
         tools:ignore="LabelFor" />
 
     <TextView
@@ -27,15 +26,6 @@
         android:layout_alignParentTop="true"
         android:text="@string/net_expenses"
         android:textSize="20sp" />
-
-    <Button
-        android:id="@+id/expenses_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="56dp"
-        android:text="@string/expense_button_text" />
 
     <Spinner
         android:id="@+id/expenses_spinner"
@@ -52,4 +42,60 @@
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
         android:text="@string/enter_button_text" />
+
+    <TextView
+        android:id="@+id/expense_dad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/expense_prev_month"
+        android:text="@string/dad_text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/expense_prev_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/expenses_spinner"
+        android:text="@string/previous_month_text"
+        android:textSize="20sp" />
+
+
+
+    <TextView
+        android:id="@+id/expense_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/expense_dad"
+        android:text="@string/food_text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/expense_transportation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/expense_food"
+        android:text="@string/transportation_text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/expense_work"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/expense_transportation"
+        android:text="@string/work_text"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/expense_misc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/expense_work"
+        android:text="@string/misc_text"
+        android:textSize="20sp" />
+
 </RelativeLayout>

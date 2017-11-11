@@ -4,80 +4,108 @@ package com.example.romel.expensestracker;
  * Created by romel on 11/11/2017.
  */
 
-public class Totals {
+class Totals {
 
     private double netExpenses;
     private double dad;
     private double prevMonth;
     private double work;
     private double food;
-    private double uber;
+    private double transportation;
     private double misc;
 
-    public Totals(){}
+    Totals(){}
 
 
-    public double getNetExpenses() {
+    double getNetExpenses() {
         return netExpenses;
     }
 
-    public void setNetExpenses(double d, boolean reset) {
-        if (reset) this.netExpenses = netExpenses;
-        else this.netExpenses += d;
+    private void updateNetExpenses() {
+        netExpenses = dad + prevMonth + work - food - transportation + misc;
     }
 
-    public double getDad() {
+    double getDad() {
         return dad;
     }
 
-    public void setDad(double d, boolean reset) {
+    private void setDad(double d, boolean reset) {
         if (reset) this.dad = d;
         else this.dad += d;
+        updateNetExpenses();
     }
 
-    public double getPrevMonth() {
+    double getPrevMonth() {
         return prevMonth;
     }
 
-    public void setPrevMonth(double d, boolean reset) {
+    private void setPrevMonth(double d, boolean reset) {
         if (reset) this.prevMonth = d;
         else this.prevMonth += d;
+        updateNetExpenses();
     }
 
-    public double getWork() {
+    double getWork() {
         return work;
     }
 
-    public void setWork(double d, boolean reset) {
+    private void setWork(double d, boolean reset) {
         if (reset) this.work = d;
         else this.work += d;
+        updateNetExpenses();
     }
 
-    public double getFood() {
+    double getFood() {
         return food;
     }
 
-    public void setFood(double d, boolean reset) {
+    private void setFood(double d, boolean reset) {
         if (reset) this.food = d;
         else this.food += d;
+        updateNetExpenses();
     }
 
-    public double getUber() {
-        return uber;
+    double getTransportation() {
+        return transportation;
     }
 
-    public void setUber(double d, boolean reset) {
-        if (reset) this.uber = uber;
+    private void setTransportation(double d, boolean reset) {
+        if (reset) this.transportation = d;
         else this.misc += d;
+        updateNetExpenses();
     }
 
-    public double getMisc() {
+    double getMisc() {
         return misc;
     }
 
-    public void setMisc(double d, boolean reset) {
-        if (reset) this.misc = misc;
+    private void setMisc(double d, boolean reset) {
+        if (reset) this.misc = d;
         else this.misc += d;
+        updateNetExpenses();
+    }
+
+    void setExpense(String type, double d, boolean reset) {
+        switch (type) {
+            case "Dad":
+                this.setDad(d, reset);
+                break;
+            case "Previous Month":
+                this.setPrevMonth(d, reset);
+                break;
+            case "Work":
+                this.setWork(d, reset);
+                break;
+            case "Food":
+                this.setFood(d, reset);
+                break;
+            case "Transportation":
+                this.setTransportation(d, reset);
+                break;
+            case "Misc":
+                this.setMisc(d, reset);
+                break;
+        }
     }
 
 }
