@@ -15,7 +15,7 @@
         android:layout_toStartOf="@+id/enter_button"
         android:ems="10"
         android:hint="@string/enter_amount"
-        android:inputType="number|numberDecimal"
+        android:inputType="numberDecimal"
         tools:ignore="LabelFor" />
 
     <TextView
@@ -48,20 +48,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/expense_prev_month"
+        android:layout_below="@+id/expenses_spinner"
         android:text="@string/dad_text"
         android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/expense_prev_month"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/expenses_spinner"
-        android:text="@string/previous_month_text"
-        android:textSize="20sp" />
-
-
 
     <TextView
         android:id="@+id/expense_food"
@@ -73,11 +62,29 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/expense_transportation"
+        android:id="@+id/expense_misc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/expense_food"
+        android:text="@string/misc_text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/expense_prev_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/expense_misc"
+        android:text="@string/previous_month_text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/expense_transportation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/expense_prev_month"
         android:text="@string/transportation_text"
         android:textSize="20sp" />
 
@@ -89,13 +96,8 @@
         android:layout_below="@+id/expense_transportation"
         android:text="@string/work_text"
         android:textSize="20sp" />
-    <TextView
-        android:id="@+id/expense_misc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/expense_work"
-        android:text="@string/misc_text"
-        android:textSize="20sp" />
+
+
+
 
 </RelativeLayout>

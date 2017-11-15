@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "362471904621",
+    "firebase_url": "https://expensestracker-9f64a.firebaseio.com",
+    "project_id": "expensestracker-9f64a",
+    "storage_bucket": "expensestracker-9f64a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362471904621:android:9daf65c60b3b4eef",
+        "android_client_info": {
+          "package_name": "com.example.romel.expensestracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362471904621-joeekfl3d6elkmfs274sdh8j44m42r5i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvNMZGkWhnBWmsOhshmfzH_GXlYV0I0r8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
